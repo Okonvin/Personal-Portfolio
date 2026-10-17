@@ -2,50 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Victor | Web Designer &amp; Frontend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!---------- HEADER ----------->
     <header>
-        <nav class="nav-container">
-
-            <!------- NAV ITEMS ------->
+        <nav class="nav-container" aria-label="Main">
             <div class="nav-items">
 
                 <!------- LOGO ------->
-                <div class="logo">V</div>
+                <a href="#home" class="logo" aria-label="Victor, back to top">V</a>
 
+                <!------- NAV ICONS ------->
                 <div class="nav-icons">
                     <ul>
-                        <li><a href="">
-                            <img src="/assets/home.svg" alt="home">
+                        <li><a href="#home" class="active" aria-label="Home" aria-current="page">
+                            <img src="assets/home.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/User.svg" alt="user">
+                        <li><a href="#about" aria-label="About">
+                            <img src="assets/User.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/Briefcase.svg" alt="Briefcase">
+                        <li><a href="#experience" aria-label="Experience">
+                            <img src="assets/Briefcase.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/Graduation-Cap.svg" alt="Graduation-Cap">
+                        <li><a href="#education" aria-label="Education">
+                            <img src="assets/Graduation-Cap.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="assets/Layer-Group.svg" alt="Layer-Group">
+                        <li><a href="#services" aria-label="Services">
+                            <img src="assets/Layer-Group.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="assets/Recent-work-icon.svg" alt="Recent-work-icon">
+                        <li><a href="#work" aria-label="Recent work">
+                            <img src="assets/Recent-work-icon.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/User-Plus.svg" alt="User-Plus">
+                        <li><a href="#hire" aria-label="Hire me">
+                            <img src="assets/User-Plus.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/Sticky-Note.svg" alt="Sticky-Note">
+                        <li><a href="#notes" aria-label="Notes">
+                            <img src="assets/Sticky-Note.svg" alt="">
                         </a></li>
-                        <li><a href="">
-                            <img src="/assets/Facebook-Messenger.svg" alt="Facebook-Messenger">
+                        <li><a href="#contact" aria-label="Contact">
+                            <img src="assets/Facebook-Messenger.svg" alt="">
                         </a></li>
                     </ul>
                 </div>
@@ -53,15 +55,30 @@
         </nav>
 
         <!--------- HERO SECTION -------->
-        <div class="hero-container">
-            <div>
+        <main class="hero-container" id="home">
+            <div class="hero-content">
+
+                <!-- Profile picture: swap this div for an <img> when you have one,
+                     e.g. <img class="avatar" src="assets/profile.jpg" alt="Victor"> -->
+                <div class="avatar" role="img" aria-label="Profile picture placeholder"></div>
+
                 <h1>Victor</h1>
-                <p>A Web Designer And A Frontend Engineer</p>
-                <img src="/assets/Facebook-Icon.svg" alt="">
-                <img src="/assets/Twitter-Icon.svg" alt="">
-                <img src="/assets/Instagram-Icon.svg" alt="">
+                <p class="tagline">A Web Designer And A Frontend Engineer</p>
+
+                <ul class="socials">
+                    <li><a href="#" aria-label="Reddit"><img src="assets/Reddit-Icon.svg" alt=""></a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="assets/Twitter-Icon.svg" alt=""></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="assets/Instagram-Icon.svg" alt=""></a></li>
+                    <li><a href="#" aria-label="Facebook"><img src="assets/Facebook-Icon.svg" alt=""></a></li>
+                    <li><a href="#" aria-label="YouTube"><img src="assets/YouTube-Icon.svg" alt=""></a></li>
+                </ul>
             </div>
-        </div>
+
+            <a href="#about" class="scroll-down">
+                <span class="mouse" aria-hidden="true"></span>
+                <span>Scroll Down</span>
+            </a>
+        </main>
     </header>
 </body>
 </html>
