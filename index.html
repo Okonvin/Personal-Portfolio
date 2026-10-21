@@ -11,51 +11,52 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!---------- HEADER ----------->
-    <header>
-        <nav class="nav-container" aria-label="Main">
-            <div class="nav-items">
+<header class="layout">
 
-                <!------- LOGO ------->
-                <a href="#home" class="logo" aria-label="Victor, back to top">V</a>
+    <!---------- SIDEBAR NAV ----------->
+    <nav class="nav-container" aria-label="Main">
+        <div class="nav-items">
 
-                <!------- NAV ICONS ------->
-                <div class="nav-icons">
-                    <ul>
-                        <li><a href="#home" class="active" aria-label="Home" aria-current="page">
-                            <img src="assets/home.svg" alt="">
-                        </a></li>
-                        <li><a href="#about" aria-label="About">
-                            <img src="assets/User.svg" alt="">
-                        </a></li>
-                        <li><a href="#experience" aria-label="Experience">
-                            <img src="assets/Briefcase.svg" alt="">
-                        </a></li>
-                        <li><a href="#education" aria-label="Education">
-                            <img src="assets/Graduation-Cap.svg" alt="">
-                        </a></li>
-                        <li><a href="#services" aria-label="Services">
-                            <img src="assets/Layer-Group.svg" alt="">
-                        </a></li>
-                        <li><a href="#work" aria-label="Recent work">
-                            <img src="assets/Recent-work-icon.svg" alt="">
-                        </a></li>
-                        <li><a href="#hire" aria-label="Hire me">
-                            <img src="assets/User-Plus.svg" alt="">
-                        </a></li>
-                        <li><a href="#notes" aria-label="Notes">
-                            <img src="assets/Sticky-Note.svg" alt="">
-                        </a></li>
-                        <li><a href="#contact" aria-label="Contact">
-                            <img src="assets/Facebook-Messenger.svg" alt="">
-                        </a></li>
-                    </ul>
-                </div>
+            <!------- LOGO ------->
+            <a href="#home" class="logo" aria-label="Victor, back to top">V</a>
+
+            <!------- NAV ICONS ------->
+            <div class="nav-icons">
+                <ul>
+                    <li><a href="#home" class="active" aria-label="Home" aria-current="page">
+                        <img src="assets/home.svg" alt="">
+                    </a></li>
+                    <li><a href="#about" aria-label="About">
+                        <img src="assets/User.svg" alt="">
+                    </a></li>
+                    <li><a href="#experience" aria-label="Experience">
+                        <img src="assets/Briefcase.svg" alt="">
+                    </a></li>
+                    <li><a href="#education" aria-label="Education">
+                        <img src="assets/Graduation-Cap.svg" alt="">
+                    </a></li>
+                    <li><a href="#services" aria-label="Services">
+                        <img src="assets/Layer-Group.svg" alt="">
+                    </a></li>
+                    <li><a href="#work" aria-label="Recent work">
+                        <img src="assets/Recent-work-icon.svg" alt="">
+                    </a></li>
+                    <li><a href="#hire" aria-label="Hire me">
+                        <img src="assets/User-Plus.svg" alt="">
+                    </a></li>
+                    <li><a href="#notes" aria-label="Notes">
+                        <img src="assets/Sticky-Note.svg" alt="">
+                    </a></li>
+                    <li><a href="#contact" aria-label="Contact">
+                        <img src="assets/Facebook-Messenger.svg" alt="">
+                    </a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
         <!--------- HERO SECTION -------->
-        <main class="hero-container" id="home">
+        <section class="hero-container" id="home">
             <div class="hero-content">
 
                 <!-- Profile picture: swap this div for an <img> when you have one,
@@ -78,7 +79,405 @@
                 <span class="mouse" aria-hidden="true"></span>
                 <span>Scroll Down</span>
             </a>
-        </main>
-    </header>
+        </section>
+
+</header>
+
+    <main class="content">
+
+        <!--------- ABOUT SECTION -------->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <h2 class="section-title" id="about-title"><img class="title-bg" src="assets/removebg.svg" alt="">About Me</h2>
+
+            <div class="about-grid">
+
+                <!-- Profile picture: swap this div for an <img> when you have one,
+                     e.g. <img class="about-avatar" src="assets/profile.jpg" alt="Victor"> -->
+                <div class="about-avatar" role="img" aria-label="Profile picture placeholder"></div>
+
+                <div class="about-card">
+                    <div class="about-text">
+                        <p>
+                            I'm Victor, a web designer and frontend engineer. I design and build
+                            clean, responsive websites, from the first sketch in Figma to the
+                            finished page in code. 
+                        </p>
+                        <!-- Put your CV in assets/ and update the path -->
+                        <a class="btn" href="assets/cv.pdf" download>Download CV</a>
+                    </div>
+
+                    <ul class="skills">
+                        <li class="skill" style="--level: 92%; --color: #4dfff2;">
+                            <div class="skill-head"><span>HTML</span><span>92%</span></div>
+                            <div class="skill-track" role="progressbar" aria-label="HTML" aria-valuemin="0" aria-valuemax="100" aria-valuenow="92">
+                                <span class="skill-fill"></span>
+                            </div>
+                        </li>
+                        <li class="skill" style="--level: 95%; --color: #fbff4d;">
+                            <div class="skill-head"><span>CSS</span><span>95%</span></div>
+                            <div class="skill-track" role="progressbar" aria-label="CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95">
+                                <span class="skill-fill"></span>
+                            </div>
+                        </li>
+                        <li class="skill" style="--level: 87%; --color: #55ff77;">
+                            <div class="skill-head"><span>JavaScript</span><span>87%</span></div>
+                            <div class="skill-track" role="progressbar" aria-label="JavaScript" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87">
+                                <span class="skill-fill"></span>
+                            </div>
+                        </li>
+                        <li class="skill" style="--level: 83%; --color: #1a9a9a;">
+                            <div class="skill-head"><span>Figma</span><span>83%</span></div>
+                            <div class="skill-track" role="progressbar" aria-label="Figma" aria-valuemin="0" aria-valuemax="100" aria-valuenow="83">
+                                <span class="skill-fill"></span>
+                            </div>
+                        </li>
+                        <li class="skill" style="--level: 87%; --color: #1565e0;">
+                            <div class="skill-head"><span>Tailwind CSS</span><span>87%</span></div>
+                            <div class="skill-track" role="progressbar" aria-label="Tailwind CSS" aria-valuemin="0" aria-valuemax="100" aria-valuenow="87">
+                                <span class="skill-fill"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stat icons: replace the src paths with your own SVGs -->
+            <ul class="stats">
+                <li class="stat">
+                    <img class="stat-icon" src="assets/fire.svg" alt="">
+                    <div class="stat-body">
+                        <span class="stat-number">198</span>
+                        <span class="stat-label">Projects completed</span>
+                    </div>
+                </li>
+                <li class="stat">
+                    <img class="stat-icon" src="assets/Building.svg" alt="">
+                    <div class="stat-body">
+                        <span class="stat-number">102</span>
+                        <span class="stat-label">Running projects</span>
+                    </div>
+                </li>
+                <li class="stat">
+                    <img class="stat-icon" src="assets/abt-user.svg" alt="">
+                    <div class="stat-body">
+                        <span class="stat-number">90</span>
+                        <span class="stat-label">Satisfied clients</span>
+                    </div>
+                </li>
+                <li class="stat">
+                    <img class="stat-icon" src="assets/Baseball.svg" alt="">
+                    <div class="stat-body">
+                        <span class="stat-number">85</span>
+                        <span class="stat-label">Awards won</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--------- EXPERIENCE & EDUCATION -------->
+        <section class="section" id="resume" aria-labelledby="experience-title">
+            <h2 class="section-title" id="experience-title"><img class="title-bg" src="assets/removebg.svg" alt="">Experience</h2>
+
+            <div class="resume-grid">
+                <!-- Work experience (nav: briefcase) -->
+                <div class="resume-card" id="experience" aria-labelledby="exp-heading">
+                    <h3 class="sr-only" id="exp-heading">Work experience</h3>
+                    <ol class="timeline">
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/graduation-cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2022 - Present</span>
+                                <h4 class="timeline-title">Job Title</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/graduation-cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2020 - 2022</span>
+                                <h4 class="timeline-title">Job Title</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/graduation-cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2018 - 2020</span>
+                                <h4 class="timeline-title">Job Title</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Education (nav: graduation cap) -->
+                <div class="resume-card" id="education" aria-labelledby="edu-heading">
+                    <h3 class="sr-only" id="edu-heading">Education</h3>
+                    <ol class="timeline">
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/Graduation-Cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2022 - Present</span>
+                                <h4 class="timeline-title">Academic Degree</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/Graduation-Cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2020 - 2022</span>
+                                <h4 class="timeline-title">Academic Degree</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-rail"><img class="timeline-icon" src="assets/Graduation-Cap.svg" alt=""><span class="timeline-line"></span></div>
+                            <div class="timeline-body">
+                                <span class="timeline-date">2018 - 2020</span>
+                                <h4 class="timeline-title">Academic Degree</h4>
+                                <p>Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!--------- SERVICES -------->
+        <section class="section" id="services" aria-labelledby="services-title">
+            <h2 class="section-title" id="services-title"><img class="title-bg" src="assets/removebg.svg" alt="">Services</h2>
+
+            <ul class="services-grid">
+                <li class="service-card">
+                    <img class="service-icon" src="assets/HTML 5-logo.svg" alt="">
+                    <h3>PSD to HTML</h3>
+                    <p>I will turn your design into a fully responsive HTML web template.</p>
+                </li>
+                <li class="service-card">
+                    <img class="service-icon" src="assets/worldpress.svg" alt="">
+                    <h3>PSD to WordPress</h3>
+                    <p>I will convert your design into a fully responsive WordPress theme.</p>
+                </li>
+                <li class="service-card">
+                    <img class="service-icon" src="assets/browser (2).svg" alt="">
+                    <h3>Landing Pages</h3>
+                    <p>I will build a fast, responsive landing page for your product or event.</p>
+                </li>
+                <li class="service-card">
+                    <img class="service-icon" src="assets/Figma.svg" alt="">
+                    <h3>Figma Design</h3>
+                    <p>I will design a Figma web template or mobile app, fully responsive.</p>
+                </li>
+                <li class="service-card">
+                    <img class="service-icon" src="assets/worldpress.svg" alt="">
+                    <h3>Figma to WordPress</h3>
+                    <p>I will convert your Figma design into a fully responsive WordPress theme.</p>
+                </li>
+                <li class="service-card">
+                    <img class="service-icon" src="assets/code.svg" alt="">
+                    <h3>Frontend Development</h3>
+                    <p>I will build interactive, accessible interfaces with HTML, CSS and JavaScript.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--------- RECENT WORKS -------->
+        <section class="section" id="work" aria-labelledby="work-title">
+            <h2 class="section-title" id="work-title"><img class="title-bg" src="assets/removebg.svg" alt="">Recent works</h2>
+
+            <div class="work-filters" role="group" aria-label="Filter projects">
+                <button type="button" data-filter="all" aria-pressed="true">Everything</button>
+                <button type="button" data-filter="creative" aria-pressed="false">Creative</button>
+                <button type="button" data-filter="art" aria-pressed="false">Art</button>
+                <button type="button" data-filter="design" aria-pressed="false">Design</button>
+                <button type="button" data-filter="branding" aria-pressed="false">Branding</button>
+            </div>
+
+            <ul class="work-grid">
+                <li class="work-card" data-category="art">
+                    <a href="#">
+                        <img src="assets/works/work-1.svg" alt="">
+                        <span class="work-overlay"><span class="work-tag">Art</span><span class="work-name">Project Title</span></span>
+                    </a>
+                </li>
+                <li class="work-card" data-category="creative">
+                    <a href="#">
+                        <img src="assets/works/work-2.svg" alt="">
+                        <span class="work-overlay"><span class="work-tag">Creative</span><span class="work-name">Guest App Walkthrough Screens</span></span>
+                    </a>
+                </li>
+                <li class="work-card" data-category="design">
+                    <a href="#">
+                        <img src="assets/works/work-3.svg" alt="">
+                        <span class="work-overlay">
+                            <span class="work-tag">Design</span>
+                            <span class="work-name">Project Title</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="work-card" data-category="branding">
+                    <a href="#">
+                        <img src="assets/works/work-4.svg" alt="">
+                        <span class="work-overlay"><span class="work-tag">Branding</span><span class="work-name">Project Title</span></span>
+                    </a>
+                </li>
+                <li class="work-card" data-category="creative">
+                    <a href="#">
+                        <img src="assets/works/work-5.svg" alt="">
+                        <span class="work-overlay"><span class="work-tag">Creative</span><span class="work-name">Project Title</span></span>
+                    </a>
+                </li>
+                <li class="work-card" data-category="design">
+                    <a href="#">
+                        <img src="assets/works/work-6.svg" alt="">
+                        <span class="work-overlay"><span class="work-tag">Design</span><span class="work-name">Project Title</span></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!--------- CLIENTS & REVIEWS -------->
+        <section class="section reviews" id="hire" aria-labelledby="reviews-title">
+            <h2 class="section-title" id="reviews-title"><img class="title-bg" src="assets/removebg.svg" alt="">Clients &amp; Reviews</h2>
+
+            <div class="reviews-slider">
+                <figure class="review">
+                    <div class="review-person">
+                        <div class="review-avatar"><img src="assets/User.svg" alt=""></div>
+                        <figcaption>
+                            <span class="review-name">Client Name</span>
+                            <span class="review-role">Product designer at Company</span>
+                        </figcaption>
+                    </div>
+                    <blockquote class="review-quote">
+                        <p>I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍</p>
+                    </blockquote>
+                </figure>
+                <figure class="review" hidden>
+                    <div class="review-person">
+                        <div class="review-avatar"><img src="assets/User.svg" alt=""></div>
+                        <figcaption>
+                            <span class="review-name">Client Name</span>
+                            <span class="review-role">Founder at Company</span>
+                        </figcaption>
+                    </div>
+                    <blockquote class="review-quote">
+                        <p>Great communication and delivered ahead of schedule. The site looks fantastic on every device.</p>
+                    </blockquote>
+                </figure>
+                <figure class="review" hidden>
+                    <div class="review-person">
+                        <div class="review-avatar"><img src="assets/User.svg" alt=""></div>
+                        <figcaption>
+                            <span class="review-name">Client Name</span>
+                            <span class="review-role">Marketing lead at Company</span>
+                        </figcaption>
+                    </div>
+                    <blockquote class="review-quote">
+                        <p>Clean, fast and exactly what we asked for. I'd happily work together again.</p>
+                    </blockquote>
+                </figure>
+
+                <div class="review-dots" role="group" aria-label="Choose a review">
+                    <button type="button" aria-label="Review 1 of 3" aria-pressed="true"></button>
+                    <button type="button" aria-label="Review 2 of 3" aria-pressed="false"></button>
+                    <button type="button" aria-label="Review 3 of 3" aria-pressed="false"></button>
+                </div>
+            </div>
+        </section>
+
+        <!--------- TECH / BRAND LOGOS -------->
+        <section class="section brands" aria-label="Technologies and tools">
+            <ul class="brands-grid">
+                <li><img src="assets/html.svg" alt="HTML5"></li>
+                <li><img src="assets/css.svg" alt="CSS3"></li>
+                <li><img src="assets/javascript.svg" alt="JavaScript"></li>
+                <li><img src="assets/bootstrap.svg" alt="Bootstrap"></li>
+                <li><img src="assets/facebook.svg" alt="Facebook"></li>
+                <li><img src="assets/youtube.svg" alt="YouTube"></li>
+                <li><img src="assets/elementor.svg" alt="Elementor"></li>
+                <li><img src="assets/WordPress_blue.svg" alt="WordPress"></li>
+                <li><img src="assets/Tailwind_CSS.svg" alt="Tailwind CSS"></li>
+                <li><img src="assets/JQuery.svg" alt="jQuery"></li>
+                <li><img src="assets/javascript.svg" alt="JavaScript"></li>
+                <li><img src="assets/css.svg" alt="CSS3"></li>
+            </ul>
+        </section>
+
+        <!--------- LATEST POSTS -------->
+        <section class="section" id="notes" aria-labelledby="posts-title">
+            <h2 class="section-title" id="posts-title"><img class="title-bg" src="assets/removebg.svg" alt="">Latest Posts</h2>
+
+            <ul class="posts-grid">
+                <li>
+                    <article class="post-card">
+                        <a href="#">
+                            <div class="post-image"><img src="assets/posts/post-1.svg" alt=""></div>
+                            <div class="post-body">
+                                <h3>5 Best App Development Tool for Your Project</h3>
+                                <p class="post-meta"><time datetime="2026-02-09">09 February, 2026</time><span>Victor</span></p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="post-card">
+                        <a href="#">
+                            <div class="post-image"><img src="assets/posts/post-2.svg" alt=""></div>
+                            <div class="post-body">
+                                <h3>5 Best App Development Tool for Your Project</h3>
+                                <p class="post-meta"><time datetime="2026-02-09">09 February, 2026</time><span>Victor</span></p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article class="post-card">
+                        <a href="#">
+                            <div class="post-image"><img src="assets/posts/post-3.svg" alt=""></div>
+                            <div class="post-body">
+                                <h3>5 Best App Development Tool for Your Project</h3>
+                                <p class="post-meta"><time datetime="2026-02-09">09 February, 2026</time><span>Victor</span></p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!--------- CONTACT -------->
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-grid">
+                <div class="contact-intro">
+                    <h2 class="section-title" id="contact-title"><img class="title-bg" src="assets/removebg.svg" alt="">Get In Touch</h2>
+                    <p>
+                        Let's talk about everything!<br>
+                        Don't like forms? Send me an <a href="mailto:you@example.com">email</a>. 👋
+                    </p>
+                    <img class="contact-map" src="assets/world-map.svg" alt="">
+                </div>
+
+                <!-- Replace the action with your form service URL (Formspree, Getform, etc.) -->
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-row">
+                        <label class="sr-only" for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+
+                        <label class="sr-only" for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
+                    </div>
+
+                    <label class="sr-only" for="subject">Your subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Your subject" required>
+
+                    <label class="sr-only" for="message">Your message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+                    <button type="submit" class="btn">Send message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>
